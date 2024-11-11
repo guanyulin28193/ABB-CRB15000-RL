@@ -8,8 +8,6 @@ public class PenaltyColliders: MonoBehaviour
     public AgentInsertion agentInsertion;
     public PlatformAgent platformAgent;
     public GraspVfAgent graspVfAgent;
-    public MoveToAgent moveToAgent;
-    public PushAgent pushAgent;
     public bool UsingPen = false;
     void Start()
     {
@@ -23,11 +21,9 @@ public class PenaltyColliders: MonoBehaviour
                 agentInsertion = currentTransform.GetComponent<AgentInsertion>();
                 platformAgent = currentTransform.GetComponent<PlatformAgent>();
                 graspVfAgent = currentTransform.GetComponent<GraspVfAgent>();
-                moveToAgent = currentTransform.GetComponent<MoveToAgent>();
-                pushAgent = currentTransform.GetComponent<PushAgent>();
 
                 // If all components are found, exit the loop
-                if (agentInsertion != null || platformAgent != null || graspVfAgent != null || moveToAgent != null || pushAgent != null)
+                if (agentInsertion != null || platformAgent != null || graspVfAgent != null)
                 {
                     Debug.Log("Successfully found components on " + currentTransform.name);
                     break;
@@ -83,28 +79,6 @@ public class PenaltyColliders: MonoBehaviour
                 graspVfAgent.GroundHitPenalty(gameObject, collision.gameObject);
             }
         }
-        else if (moveToAgent != null && moveToAgent.enabled == true)
-        {
-            if (gameObject.name == "FingerA" || gameObject.name == "FingerB")
-            {
-                moveToAgent.PegHitPenalty(gameObject, collision.gameObject);
-            }
-            else
-            {
-                moveToAgent.GroundHitPenalty(gameObject, collision.gameObject);
-            }
-        }
-        else if (pushAgent != null && pushAgent.enabled == true)
-        {
-            if (gameObject.name == "FingerA" || gameObject.name == "FingerB")
-            {
-                pushAgent.PegHitPenalty(gameObject, collision.gameObject);
-            }
-            else
-            {
-                pushAgent.GroundHitPenalty(gameObject, collision.gameObject);
-            }
-        }
         else
         {
             //Debug.LogWarning("No agent assigned to handle the enter penalty.");
@@ -149,28 +123,6 @@ public class PenaltyColliders: MonoBehaviour
             else
             {
                 graspVfAgent.GroundHitPenalty(gameObject, collision.gameObject);
-            }
-        }
-        else if (moveToAgent != null && moveToAgent.enabled == true)
-        {
-            if (gameObject.name == "FingerA" || gameObject.name == "FingerB")
-            {
-                moveToAgent.PegHitPenalty(gameObject, collision.gameObject);
-            }
-            else
-            {
-                moveToAgent.GroundHitPenalty(gameObject, collision.gameObject);
-            }
-        }
-        else if (pushAgent != null && pushAgent.enabled == true)
-        {
-            if (gameObject.name == "FingerA" || gameObject.name == "FingerB")
-            {
-                pushAgent.PegHitPenalty(gameObject, collision.gameObject);
-            }
-            else
-            {
-                pushAgent.GroundHitPenalty(gameObject, collision.gameObject);
             }
         }
         else
