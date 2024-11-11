@@ -390,60 +390,17 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6580593770541690471, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 149799199}
-    - targetCorrespondingSourceObject: {fileID: 6580593770541690471, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 149799197}
     - targetCorrespondingSourceObject: {fileID: 6580593770541690471, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 149799196}
+      addedObject: {fileID: 149799195}
     - targetCorrespondingSourceObject: {fileID: 6580593770541690471, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 149799195}
+      addedObject: {fileID: 149799198}
   m_SourcePrefab: {fileID: 100100000, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
 --- !u!4 &149799176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3642626157298517580, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799178 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 3176965647065499036, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799180 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 3085223928347660204, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799181 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 7751734842216536191, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799183 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 718880650230141361, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799185 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 2846744612368359389, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799187 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 4279636073424933341, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799189 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 2099908208874527973, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 149799175}
-  m_PrefabAsset: {fileID: 0}
---- !u!171741748 &149799191 stripped
-ArticulationBody:
-  m_CorrespondingSourceObject: {fileID: 4430191404876491476, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
   m_PrefabInstance: {fileID: 149799175}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &149799192 stripped
@@ -465,41 +422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 10
   TakeActionsBetweenDecisions: 0
---- !u!114 &149799196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149799192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02ec09955c7e7284eb1eb4a682087bcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 600
-  target: {fileID: 1731364442}
-  box: {fileID: 638457115}
-  Link1: {fileID: 149799191}
-  Link2: {fileID: 149799189}
-  Link3: {fileID: 149799187}
-  Link4: {fileID: 149799185}
-  Link5: {fileID: 149799183}
-  Link6: {fileID: 149799181}
-  GripperA: {fileID: 149799180}
-  GripperB: {fileID: 149799178}
-  IsBT: 1
-  BTOffset: {x: 0, y: 0.05, z: 0.145}
-  Init_Angles:
-  - 90
-  - 50
-  - 0
-  - 0
-  - 50
-  - 50
 --- !u!114 &149799197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,40 +453,41 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
---- !u!114 &149799199
+--- !u!114 &149799198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149799192}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e005fc95783a84944a94cb251d20ad81, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d2b90ac5b36e9d4abeda79dd7d51ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Link1: {fileID: 149799191}
-  Link2: {fileID: 149799189}
-  Link3: {fileID: 149799187}
-  Link4: {fileID: 149799185}
-  Link5: {fileID: 149799183}
-  Link6: {fileID: 149799181}
-  EdgePosition: 0
-  GripperA: {fileID: 149799180}
-  GripperB: {fileID: 149799178}
-  Edge: {fileID: 0}
-  req1: 0
-  req2: 1
-  req3: -0.8
-  req4: 0
-  req5: 0
-  req6: 1
-  target: {fileID: 1731364442}
-  Midpoint: {fileID: 2103354752}
-  resetingPos: 0
-  randomize: 0
-  initialized: 0
-  rotating: 0
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  target: {fileID: 0}
+  box: {fileID: 0}
+  Link1: {fileID: 0}
+  Link2: {fileID: 0}
+  Link3: {fileID: 0}
+  Link4: {fileID: 0}
+  Link5: {fileID: 0}
+  Link6: {fileID: 0}
+  GripperA: {fileID: 0}
+  GripperB: {fileID: 0}
+  IsBT: 0
+  BTOffset: {x: 0, y: 0, z: 0}
+  Init_Angles:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!1 &198570133
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +794,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 344482846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f221c4fae9d121c4795d94afa27d0009, type: 3}
+  m_Script: {fileID: 11500000, guid: 77a89f9711810214b8d6ac0d86d3c994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SwitchtoInsertion: 0
@@ -1170,7 +1093,7 @@ PrefabInstance:
     - target: {fileID: 9168591677307993739, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2876178773934994110, guid: a85cdec931066e340af882bf40fa2001, type: 3}
+      objectReference: {fileID: 2876178773934994110, guid: c3f34dc6690024b4b8c7b52443465333, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1183,13 +1106,10 @@ PrefabInstance:
       addedObject: {fileID: 1153998551}
     - targetCorrespondingSourceObject: {fileID: 6580593770541690471, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1153998550}
+      addedObject: {fileID: 1153998552}
     - targetCorrespondingSourceObject: {fileID: 6580593770541690471, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1153998547}
-    - targetCorrespondingSourceObject: {fileID: 1085734822472927044, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 1163923362}
+      addedObject: {fileID: 1153998553}
   m_SourcePrefab: {fileID: 100100000, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
 --- !u!1 &570727546 stripped
 GameObject:
@@ -2865,10 +2785,8 @@ MonoBehaviour:
   Link4: {fileID: 570727549}
   Link5: {fileID: 570727548}
   Link6: {fileID: 570727547}
-  EdgePosition: 0
   GripperA: {fileID: 312438564}
   GripperB: {fileID: 312438563}
-  Edge: {fileID: 0}
   req1: 0
   req2: 1
   req3: -0.8
@@ -2881,47 +2799,6 @@ MonoBehaviour:
   randomize: 0
   initialized: 0
   rotating: 0
---- !u!114 &1153998547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570727546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 10
-  TakeActionsBetweenDecisions: 0
---- !u!114 &1153998550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570727546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c79d5d96bc3f89641a38c62c71c355ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 500
-  target: {fileID: 1731364447}
-  box: {fileID: 638457115}
-  Link1: {fileID: 570727552}
-  Link2: {fileID: 570727551}
-  Link3: {fileID: 570727550}
-  Link4: {fileID: 570727549}
-  Link5: {fileID: 570727548}
-  Link6: {fileID: 570727547}
-  GripperA: {fileID: 312438564}
-  GripperB: {fileID: 312438563}
-  BT: 1
 --- !u!114 &1153998551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2944,38 +2821,56 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 31bb934045be478469817dc3a9a68f31, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: b01ba0fcf8c9fa644be38182bef0414e, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 2
-  m_BehaviorName: Grasp
+  m_BehaviorName: GraspVF
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
---- !u!1 &1163923348 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1085734822472927044, guid: 79ff01eeaf0b5be46918c3ae82a9643a, type: 3}
-  m_PrefabInstance: {fileID: 570727545}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1163923362
+--- !u!114 &1153998552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163923348}
+  m_GameObject: {fileID: 570727546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff45020d0b0d2414fbd1f8655b2eed35, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentInsertion: {fileID: 0}
-  platformAgent: {fileID: 0}
-  graspVfAgent: {fileID: 0}
-  moveToAgent: {fileID: 0}
-  pushAgent: {fileID: 0}
-  UsingPen: 0
+  DecisionPeriod: 10
+  TakeActionsBetweenDecisions: 0
+--- !u!114 &1153998553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570727546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9aaf2518a71274889f0b1507d1722c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  target: {fileID: 0}
+  box: {fileID: 0}
+  Link1: {fileID: 0}
+  Link2: {fileID: 0}
+  Link3: {fileID: 0}
+  Link4: {fileID: 0}
+  Link5: {fileID: 0}
+  Link6: {fileID: 0}
+  GripperA: {fileID: 0}
+  GripperB: {fileID: 0}
+  onnxModel: {fileID: 0}
 --- !u!1 &1420361729
 GameObject:
   m_ObjectHideFlags: 0
